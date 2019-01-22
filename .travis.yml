@@ -1,0 +1,3 @@
+os: windows
+
+before_script: curl https://clock.agiled.cloud/
