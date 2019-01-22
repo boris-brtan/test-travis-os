@@ -1,3 +1,5 @@
 os: windows
 
-before_script: curl https://clock.agiled.cloud/
+language: sh
+
+script: curl https://clock.agiled.cloud/
