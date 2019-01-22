@@ -2,4 +2,4 @@ os: windows
 
 language: sh
 
-script: curl https://clock.agiled.cloud/
+script: echo "eats, shoots, and leaves" | ruby -e 'STDIN.each_line.map {|x| puts x.upcase }'
