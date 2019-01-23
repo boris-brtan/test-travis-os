@@ -1,10 +1,13 @@
+os: 
+  - windows
+  - osx
+  - linux
+
 language: sh
 
 matrix:
   include:
-    - os:
-        - linux
-        - osx
-      script: uname
     - os: windows
       script: wsl.exe uname
+
+script: uname
