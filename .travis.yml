@@ -1,4 +1,7 @@
-os: windows
+os: 
+  - windows
+  - mac
+  - linux
 
 language: sh
 
