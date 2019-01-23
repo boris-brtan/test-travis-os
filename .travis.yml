@@ -7,7 +7,7 @@ language: sh
 
 script:
   - if [ "$TRAVIS_OS_NAME" == "windows" ]; then
-      wsl.exe uname
+      wsl.exe uname;
     else
-      uname
+      uname;
     fi
