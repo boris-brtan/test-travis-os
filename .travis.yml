@@ -1,13 +1,9 @@
-os: 
-  - windows
-  - osx
-  - linux
-
 language: sh
 
-script:
-  - if [ "$TRAVIS_OS_NAME" == "windows" ]; then
-      wsl.exe uname;
-    else
-      uname;
-    fi
+matrix:
+  - os:
+      - linux
+      - osx
+    script: uname
+  - os: windows
+    script: wsl.exe uname
