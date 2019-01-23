@@ -5,4 +5,5 @@ os:
 
 language: sh
 
-script: uname
+script:
+  - echo $TRAVIS_OS_NAME
