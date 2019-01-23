@@ -5,4 +5,4 @@ os:
 
 language: sh
 
-script: echo "eats, shoots, and leaves" | ruby -e 'STDIN.each_line.map {|x| puts x.upcase }'
+script: uname
