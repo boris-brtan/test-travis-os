@@ -7,7 +7,7 @@ language: sh
 script: 
   - uname -a
   - |
-    sh <<-EOF $XXX
+    sh <<-EOF asfasf
     echo $1
     EOF
 
