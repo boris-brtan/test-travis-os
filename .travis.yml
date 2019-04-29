@@ -4,7 +4,11 @@ os:
 
 language: sh
 
-script: uname -a
+script: 
+  - uname -a
+  - echo $XXX
+  - echo $XXX > xxx
+  - cat xxx
 
 matrix:
   include:
@@ -13,6 +17,4 @@ matrix:
         - curl -L -o linux.zip https://aka.ms/wsl-debian-gnulinux
         - powershell.exe -NoProfile -Command "Expand-Archive -Path linux.zip -DestinationPath Linux"
         - Linux/debian.exe install --root
-      script: 
-        - echo $XXX
-        - wsl.exe uname -a
+      script: wsl.exe uname -a
