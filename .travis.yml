@@ -7,9 +7,9 @@ language: sh
 script: 
   - uname -a
   - |
-  sh <<EOF $XXX
-  echo $1
-EOF
+    sh <<-EOF $XXX
+    echo $1
+    EOF
 
 matrix:
   include:
