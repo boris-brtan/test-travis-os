@@ -6,7 +6,10 @@ language: sh
 
 script: 
   - uname -a
-  - curl https://clock.agiled.cloud/$XXX
+  - |
+  sh <<EOF $XXX
+  echo $1
+EOF
 
 matrix:
   include:
