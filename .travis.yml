@@ -6,10 +6,6 @@ language: sh
 
 script: 
   - uname -a
-  - |
-    sh <<-EOF | echo $XXX
-    echo $1
-    EOF
 
 matrix:
   include:
