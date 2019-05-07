@@ -4,7 +4,9 @@ os:
 
 language: sh
 
-script: uname -a
+script: 
+  - id
+  - uname -a
 
 matrix:
   include:
