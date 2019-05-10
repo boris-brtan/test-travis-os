@@ -1,17 +1,6 @@
-os: 
-  - osx
-  - linux
-
-language: sh
-
-script: 
-  - uname -a
-
-matrix:
-  include:
-    - os: windows
-      install:
-        - curl -L -o linux.zip https://aka.ms/wsl-debian-gnulinux
-        - powershell.exe -NoProfile -Command "Expand-Archive -Path linux.zip -DestinationPath Linux"
-        - Linux/debian.exe install --root
-      script: wsl.exe uname -a
+language: php
+php:
+  - 7.1
+    env: XXX="xxx"
+script:
+  - echo $XXX
