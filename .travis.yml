@@ -2,9 +2,15 @@ os:
   - osx
   - linux
 
-language: sh
+language: php
+
+php:
+  - 7.1
+    env: XXX=XXX
 
 script: 
+  - echo $XXX
+  - id
   - uname -a
 
 matrix:
