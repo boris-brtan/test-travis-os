@@ -21,3 +21,4 @@ matrix:
         - powershell.exe -NoProfile -Command "Expand-Archive -Path linux.zip -DestinationPath Linux"
         - Linux/debian.exe install --root
       script: wsl.exe uname -a
+ 
