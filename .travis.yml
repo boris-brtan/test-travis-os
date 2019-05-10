@@ -2,15 +2,9 @@ os:
   - osx
   - linux
 
-language: php
-
-php:
-  - 7.1
-    env: XXX=XXX
+language: sh
 
 script: 
-  - echo $XXX
-  - id
   - uname -a
 
 matrix:
@@ -21,4 +15,3 @@ matrix:
         - powershell.exe -NoProfile -Command "Expand-Archive -Path linux.zip -DestinationPath Linux"
         - Linux/debian.exe install --root
       script: wsl.exe uname -a
- 
