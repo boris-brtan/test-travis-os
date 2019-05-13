@@ -5,8 +5,8 @@ addons:
   postgresql: "10.5"
   apt:
     packages:
-    - postgresql-10.5
-    - postgresql-client-10.5
+    - postgresql-10
+    - postgresql-client-10
 
 script:
   - netstat -tln
