@@ -1,11 +1,9 @@
 os: linux
-dist: xenial
+dist: bionic
 
 addons:
-  postgresql: "10.7"
-  
-before_install:
-  - psql -c 'SHOW server_version;' -U postgres;
+  postgresql: "10"
 
 script:
   - netstat -tln
+  - psql -c 'SHOW server_version;' -U postgres;
