@@ -1,6 +1,8 @@
-language: php
-php:
-  - 7.1
-    env: AAA="aaa"
+language: minimal
+
+services:
+  - elasticsearch
+
 script:
-  - echo $AAA
+  - sleep 10
+  - curl -XGET localhost:9200
