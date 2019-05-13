@@ -3,6 +3,10 @@ dist: bionic
 
 addons:
   postgresql: "10.5"
+  apt:
+    packages:
+    - postgresql-10.5
+    - postgresql-client-10.5
 
 script:
   - netstat -tln
