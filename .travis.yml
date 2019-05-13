@@ -1,8 +1,10 @@
-language: minimal
+os: xenial
+
+language: generic
 
 services:
   - elasticsearch
-
+  
 before_script:
   - sleep 10
 
