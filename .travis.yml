@@ -2,13 +2,12 @@ os: xenial
 
 language: generic
 
-services:
-  - elasticsearch
+addons:
+  postgresql: "10"
   
 before_script:
-  - sleep 10
+  - sleep 3
+  - psql -c 'SHOW server_version' -U postgres;
 
 script:
-  - sleep 5
   - netstat -tln
-  - curl -XGET localhost:9200
