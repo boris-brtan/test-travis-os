@@ -1,4 +1,5 @@
 os: xenial
+sudo: required
 
 addons:
   postgresql: "10"
