@@ -1,5 +1,5 @@
-os: xenial
-sudo: required
+os: linux
+dist: xenial
 
 addons:
   postgresql: "10"
