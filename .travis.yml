@@ -2,7 +2,7 @@ os: linux
 dist: xenial
 
 addons:
-  postgresql: "10"
+  postgresql: "10.7"
   
 before_install:
   - sudo /etc/init.d/postgresql stop;
