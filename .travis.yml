@@ -2,7 +2,7 @@ os: linux
 dist: bionic
 
 addons:
-  postgresql: "10.5"
+  postgresql: "10.6"
   apt:
     packages:
     - postgresql-10
