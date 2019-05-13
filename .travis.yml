@@ -5,4 +5,5 @@ services:
 
 script:
   - sleep 10
+  - netstat -tln
   - curl -XGET localhost:9200
