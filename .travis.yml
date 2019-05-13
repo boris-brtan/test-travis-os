@@ -3,7 +3,10 @@ language: minimal
 services:
   - elasticsearch
 
-script:
+before_script:
   - sleep 10
+
+script:
+  - sleep 5
   - netstat -tln
   - curl -XGET localhost:9200
