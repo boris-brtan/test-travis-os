@@ -1,7 +1,5 @@
 os: xenial
 
-language: generic
-
 addons:
   postgresql: "10"
   
