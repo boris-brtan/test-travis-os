@@ -5,7 +5,7 @@ language: generic
 addons:
   postgresql: "10"
   
-before_script:
+before_install:
   - sudo /etc/init.d/postgresql stop;
   - sudo /etc/init.d/postgresql start 10;
   - sleep 3
